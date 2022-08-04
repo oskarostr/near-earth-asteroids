@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/hd-wallpaper-g8c22d4366_1920.jpg");
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+.shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  background-color: #06283D;
+  z-index: 15;
+}
+.container .title {
+  font-size: 3rem;
+  color: #DFF6FF;
+}
+.container .asteroids-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  background-color: red;
+  gap: 1rem;
+}
+.container .asteroids-container .asteroid {
+  width: 150px;
+  height: 100px;
+  background-color: #DFF6FF;
+}/*# sourceMappingURL=style.css.map */
